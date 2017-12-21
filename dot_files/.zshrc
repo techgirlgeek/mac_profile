@@ -62,6 +62,9 @@ ZSH_CUSTOM=/Users/kcassio/mac_profile/zsh_custom
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  iterm2
+  iwhois
+  osx
 )
 
 source $ZSH/oh-my-zsh.sh
