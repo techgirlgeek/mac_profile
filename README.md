@@ -15,3 +15,5 @@ Nothing much exciting to see here, just setup to save me time in the future.
   - Type 'shell command' 
   - Install 'code' command in PATH command.
 
+* Update $HOME/.gitconfig to use pulled aliases
+  - Add the following line: include.path=~/mac_profile/git/git_aliases
