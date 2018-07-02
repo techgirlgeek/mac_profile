@@ -1,8 +1,10 @@
 alias lstr='ls -ltrh'
 alias ll='ls -lh'
-alias workshuttle="source /Users/kcassio/.zshrc;sshuttle -r kcassio@sea1l3vipcj01.davita.corp `dig slack.com | egrep "^slack" | awk '{print \$5}'`/32 10.9.0.0/16 10.10.0.0/16 10.12.0.0/16"
+alias workshuttleS="source /Users/kcassio/.zshrc;sshuttle -r kcassio@sea1l3vipcj01.davita.corp \`dig +search +short slack.com\`/32 10.9.0.0/16 10.10.0.0/16 10.12.0.0/16"
+alias workshuttleD="sshuttle --dns -r kcassio@den3l1cliqa74077.davita.corp 0/0" 
 alias homeshuttle='sshuttle -r kcassio@sea1l3vipcj01.davita.corp 10.9.0.0/16 10.10.0.0/16 10.12.0.0/16'
-alias ddig="dig drupal.slack.com | egrep "^drupal" | awk '{print \$5}'"
+alias homeshuttleD='sshuttle -r kcassio@den3l1cliqa74077.davita.corp 0/0'
+alias ddig="dig +search +short drupal.slack.com"
 alias sourcez="source /Users/kcassio/.zshrc"
 alias gitprunedry="git remote prune origin --dry-run"
 alias gitprune="git remote prune origin"
@@ -12,3 +14,4 @@ alias vdestroy="vagrant destroy "
 alias vprov="vagrant provision "
 alias vstat="vagrant status"
 alias vhalt="vagrant halt "
+alias artifactoryport="ssh 10.9.35.205 -L 1178:localhost:1178"
