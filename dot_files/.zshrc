@@ -61,10 +61,20 @@ ZSH_CUSTOM=~/mac_profile/zsh_custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  colored-man-pages
+  colorize
+  command-not-found
   git
+  git-extras
+  git-flow
+  git-remote-branch
   iterm2
   iwhois
   osx
+  vagrant
+  vagrant-prompt
+  vscode
+  zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
