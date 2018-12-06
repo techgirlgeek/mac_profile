@@ -19,3 +19,8 @@ Nothing much exciting to see here, just setup to save me time in the future.
   - Add the following lines: 
   [include]
        path=~/mac_profile/git/git_aliases
+
+* Vscode Extensions
+  - Start vscode
+  - ls mac_profiles/vscode/extensions-list.txt - to get a list of extensions to install
+  

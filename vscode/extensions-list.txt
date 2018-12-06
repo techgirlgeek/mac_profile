@@ -1,0 +1,20 @@
+total 0
+drwxr-xr-x  13 kcassio  DAVITA\Domain Users  416 Dec  6 12:02 bitzl.vscode-puppet-0.4.5
+drwxr-xr-x   8 kcassio  DAVITA\Domain Users  256 Dec  6 11:36 brandontosch.hiera-eyaml-1.0.1
+drwxr-xr-x  25 kcassio  DAVITA\Domain Users  800 Dec  6 11:36 donjayamanne.githistory-0.4.4
+drwxr-xr-x  11 kcassio  DAVITA\Domain Users  352 Dec  6 12:02 henriiik.docker-linter-0.5.0
+drwxr-xr-x  24 kcassio  DAVITA\Domain Users  768 Dec  6 11:36 jpogran.puppet-vscode-0.14.0
+drwxr-xr-x  11 kcassio  DAVITA\Domain Users  352 Dec  6 11:36 marlon407.code-groovy-0.1.0
+drwxr-xr-x  29 kcassio  DAVITA\Domain Users  928 Dec  6 12:02 ms-python.python-2018.11.0
+drwxr-xr-x  19 kcassio  DAVITA\Domain Users  608 Dec  6 11:36 ms-vscode.go-0.7.0
+drwxr-xr-x   9 kcassio  DAVITA\Domain Users  288 Dec  6 11:36 narekmal.vscode-run-git-difftool-0.0.5
+drwxr-xr-x  16 kcassio  DAVITA\Domain Users  512 Dec  6 12:02 peterjausovec.vscode-docker-0.4.0
+drwxr-xr-x  17 kcassio  DAVITA\Domain Users  544 Dec  6 11:36 redhat.vscode-yaml-0.1.0
+drwxr-xr-x  22 kcassio  DAVITA\Domain Users  704 Dec  6 11:36 robertohuertasm.vscode-icons-7.28.0
+drwxr-xr-x  11 kcassio  DAVITA\Domain Users  352 Dec  6 11:36 samschneller.git-common-commands-suite-0.2.2
+drwxr-xr-x  10 kcassio  DAVITA\Domain Users  320 Dec  6 11:36 samschneller.git-pull-upstream-0.0.7
+drwxr-xr-x  10 kcassio  DAVITA\Domain Users  320 Dec  6 11:36 secanis.jenkinsfile-support-0.1.0
+drwxr-xr-x  10 kcassio  DAVITA\Domain Users  320 Dec  6 11:41 sidneys1.gitconfig-2.0.0
+drwxr-xr-x  10 kcassio  DAVITA\Domain Users  320 Dec  6 11:36 spankyworks.groovy-gsp-0.1.0
+drwxr-xr-x   8 kcassio  DAVITA\Domain Users  256 Dec  6 11:36 teledemic.branch-warnings-1.0.4
+drwxr-xr-x  13 kcassio  DAVITA\Domain Users  416 Dec  6 11:36 waderyan.gitblame-2.6.3
