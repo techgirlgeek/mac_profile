@@ -110,6 +110,21 @@ source $ZSH/oh-my-zsh.sh
 
 export GOPATH=$HOME/go
 PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
+export PATH="$PATH:/Users/kcassio/go/src/github.com/docker/docker-credential-helpers/bin"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Applications/google-cloud-sdk/path.zsh.inc' ]; then . '/Applications/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Applications/google-cloud-sdk/completion.zsh.inc' ]; then . '/Applications/google-cloud-sdk/completion.zsh.inc'; fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$PATH:/usr/local/lib/ruby/gems/2.5.0/bin:/usr/local/opt/ruby/bin"
+export PATH="~/.gem/ruby/2.3.0/bin:$PATH"
+eval "$(rbenv init -)"
+
+export PATH="/usr/local/opt/openssl/bin:$PATH"
