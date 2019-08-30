@@ -1,25 +1,4 @@
-# DaVita SDLC SSH Config
-Host jump den3jump den3l1cliqa74077 den3l1cliqa74077.davita.corp
-  Hostname 10.9.74.77
-  ForwardAgent yes
-Host yengjump sea1l1epatj01.davita.corp
-  Hostname sea1l1epatj01.davita.corp
-  ForwardAgent yes
-Host sea1jump sea1l3vipcj01.davita.corp
-  Hostname sea1l3vipcj01.davita.corp
-  ForwardAgent yes
-Host 10.9.217.* den4
-  ProxyJump sea1jump
-Host github.com
-  ProxyJump jump
-Host *.davita.corp *.davita.com !sea1l3vipcj01.davita.corp 10.9.* 10.10.* 10.12.* !10.9.74.77 !10.9.218.11 !10.10.74.* !10.9.74.* !sea1l3vipcj01.davita.corp !den3l1cliqa74077.davita.corp !sea1l1epatj01.davita.corp !127.0.0.1
-  Hostname %h
-  ProxyJump jump
-Host sea* den* !*.davita.corp !sea1l3vipcj01 !den3l1cliqa74077 !*jump*
-  Hostname %h.davita.corp
-  ProxyJump jump
-Host pe-* *-puppet
-  Hostname %h.davita.com
-  ProxyJump jump
+Include ~/mac_profile/dot_files/davita-config
+
 Host *
   ServerAliveInterval 60

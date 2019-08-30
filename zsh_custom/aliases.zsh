@@ -16,3 +16,4 @@ alias vstat="vagrant status"
 alias vhalt="vagrant halt "
 alias artifactoryport="ssh 10.9.35.205 -L 1178:localhost:1178"
 alias evalbundle='eval "$(<env.sh)"'
+alias clear_dns='sudo killall -HUP mDNSResponder; sleep 2; echo macOS DNS Cache Reset'
