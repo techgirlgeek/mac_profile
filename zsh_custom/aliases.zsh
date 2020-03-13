@@ -18,8 +18,24 @@ alias artifactoryport="ssh 10.9.35.205 -L 1178:localhost:1178"
 alias evalbundle='eval "$(<env.sh)"'
 alias clear_dns='sudo killall -HUP mDNSResponder; sleep 2; echo macOS DNS Cache Reset'
 alias morpa_rvm='rvm use ruby-2.3.3'
+
+# K8s aliases
 alias k='kubectl'
 alias kns='kubens'
 alias knx='kubectx'
 alias kpon='kubeon'
 alias kpoff='kubeoff'
+alias ke='k get events --sort-by={.lastTimestamp}'
+alias kpodw='k get pods -o wide'
+alias kpod='k get pods'
+
+# Elastic
+alias cerebro='docker run -p 9000:9000 lmenezes/cerebro'
+
+# LDAP
+alias myldap='ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D kcassio@davita.corp -W "(samAccountName=kcassio)" memberof'
+#alias userldap='ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D kcassio@davita.corp -W "(samAccountName=$1)" memberof'
+#userldap() {
+#    ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D kcassio@davita.corp -W "(samAccountName=$1)" memberof
+#}
+alias mytest="echo Make it say: $1"
