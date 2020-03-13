@@ -1,0 +1,6 @@
+meld
+pdk
+powershell
+vagrant
+virtualbox
+virtualbox-extension-pack
