@@ -10,6 +10,8 @@ export ZSH=~/.oh-my-zsh
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
 
+DEFAULT_USER=`whoami`
+
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -69,15 +71,18 @@ plugins=(
   git-flow
   git-remote-branch
   iterm2
-  iwhois
   osx
   vagrant
   vagrant-prompt
   vscode
   zsh_reload
+  kube-ps1
 )
 
 source $ZSH/oh-my-zsh.sh
+
+# After the "source Oh My Zsh" line
+PROMPT=$PROMPT'$(kube_ps1) '
 
 # User configuration
 
@@ -120,11 +125,16 @@ if [ -f '/Applications/google-cloud-sdk/path.zsh.inc' ]; then . '/Applications/g
 # The next line enables shell command completion for gcloud.
 if [ -f '/Applications/google-cloud-sdk/completion.zsh.inc' ]; then . '/Applications/google-cloud-sdk/completion.zsh.inc'; fi
 
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$PATH:/usr/local/lib/ruby/gems/2.5.0/bin:/usr/local/opt/ruby/bin"
-export PATH="~/.gem/ruby/2.3.0/bin:$PATH"
-eval "$(rbenv init -)"
 
-export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="$PATH:$HOME/Library/Python/2.7/bin"
+
+
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/vault vault
