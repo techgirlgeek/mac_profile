@@ -78,15 +78,15 @@
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>1742 1375 885 473 1680 499 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>210 0 1130 962 0 0 1680 1027 </string>
+	<string>509 19 1130 962 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>69 41 1130 962 0 0 1680 1027 </string>
+	<string>183 0 1130 962 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
 	<string>0 748 780 218 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>78 661 780 197 0 0 1680 1027 </string>
+	<string>87 776 780 197 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>12 805 780 197 0 0 1680 1027 </string>
+	<string>147 784 780 197 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
 	<string>94 502 885 473 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 7</key>
@@ -2924,6 +2924,8 @@
 					<string>PasswordTrigger</string>
 					<key>parameter</key>
 					<string>kcassio — kcassio</string>
+					<key>partial</key>
+					<true/>
 					<key>regex</key>
 					<string>^\[local sudo\] Password:</string>
 				</dict>
@@ -4539,7 +4541,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-15T20:48:48Z</date>
+	<date>2020-04-22T03:58:50Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
