@@ -79,6 +79,7 @@ install_package sshuttle ''
 install_package telnet ''
 install_package terraform ''
 install_package tmux ''
+install_package tree ''
 install_package unbound ''
 install_package utf8proc ''
 install_package wget ''
@@ -94,6 +95,7 @@ brew cask install $1
 install_cask_package lens
 install_cask_package meld
 install_cask_package pdk
+install_cask_package postman
 install_cask_package powershell
 install_cask_package vagrant
 install_cask_package virtualbox
