@@ -72,25 +72,29 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame ProfilesPanel</key>
-	<string>275 597 735 382 0 0 1680 1027 </string>
+	<string>4771 1457 735 382 4240 499 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 443 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1742 1375 885 473 1680 499 2560 1417 </string>
+	<string>4240 1544 780 218 4240 499 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>509 19 1130 962 0 0 1680 1027 </string>
+	<string>5800 1536 780 197 4240 499 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>183 0 1130 962 0 0 1680 1027 </string>
+	<string>4278 1719 780 197 4240 499 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>0 748 780 218 0 0 1680 1027 </string>
+	<string>5915 1443 885 473 4240 499 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>87 776 780 197 0 0 1680 1027 </string>
+	<string>4383 723 1130 962 4240 499 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
-	<string>147 784 780 197 0 0 1680 1027 </string>
+	<string>157 132 1312 877 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
-	<string>94 502 885 473 0 0 1680 1027 </string>
+	<string>94 774 780 197 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 7</key>
-	<string>115 65 1130 962 0 0 1680 1027 </string>
+	<string>115 830 780 197 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 8</key>
+	<string>230 353 780 218 0 0 1680 1027 </string>
+	<key>NSWindow Frame iTerm Window 9</key>
+	<string>251 330 780 218 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -850,6 +854,26 @@
 					<true/>
 					<key>regex</key>
 					<string>^svc_password:</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string>kcassio — kcassio</string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>^Enter host password for user 'kcassio':</string>
+				</dict>
+				<dict>
+					<key>action</key>
+					<string>PasswordTrigger</string>
+					<key>parameter</key>
+					<string>kcassio — kcassio</string>
+					<key>partial</key>
+					<true/>
+					<key>regex</key>
+					<string>^Password \(will be hidden\):</string>
 				</dict>
 			</array>
 			<key>Triggers Use Interpolated Strings</key>
@@ -3774,7 +3798,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>EF1EE0AF-EAC3-4641-B68E-D961FBD37202</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>17</integer>
+	<integer>19</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4541,7 +4565,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-22T03:58:50Z</date>
+	<date>2020-05-29T14:43:25Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>

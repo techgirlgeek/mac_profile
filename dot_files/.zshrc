@@ -120,8 +120,6 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH="$PATH:/Users/kcassio/go/src/github.com/docker/docker-credential-helpers/bin"
 
 export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -140,3 +138,4 @@ if [ -f '/Applications/google-cloud-sdk/path.zsh.inc' ]; then . '/Applications/g
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Applications/google-cloud-sdk/completion.zsh.inc' ]; then . '/Applications/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="/usr/local/sbin:$PATH"
