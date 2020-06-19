@@ -121,12 +121,7 @@ export PATH="$PATH:/Users/kcassio/go/src/github.com/docker/docker-credential-hel
 
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 export PATH="$PATH:$HOME/Library/Python/2.7/bin"
-
-
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/vault vault
@@ -139,3 +134,8 @@ if [ -f '/Applications/google-cloud-sdk/path.zsh.inc' ]; then . '/Applications/g
 # The next line enables shell command completion for gcloud.
 if [ -f '/Applications/google-cloud-sdk/completion.zsh.inc' ]; then . '/Applications/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="/usr/local/sbin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$HOME/.rvm/gems/ruby-2.4.0/bin:$PATH"
+export PATH="$PATH:$HOME/.rvm/bin"
+

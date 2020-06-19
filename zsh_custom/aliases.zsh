@@ -28,6 +28,8 @@ alias kpoff='kubeoff'
 alias ke='k get events --sort-by={.lastTimestamp}'
 alias kpodw='k get pods -o wide'
 alias kpod='k get pods'
+alias kpvc='k get pvc'
+alias kpvcd='k describe pvc '
 
 # Elastic
 alias cerebro='docker run -p 9000:9000 lmenezes/cerebro'
