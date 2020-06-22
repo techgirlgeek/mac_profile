@@ -8,6 +8,7 @@ brew install $1 $2
 }
 brew tap atombender/ktail
 brew tap c-bata/kube-prompt
+brew tap derailed/k9s
 brew tap homebrew/bundle
 brew tap homebrew/cask
 brew tap homebrew/core
@@ -34,8 +35,10 @@ install_package helm ''
 install_package helm@2 ''
 install_package helmfile ''
 install_package isl ''
+install_package jfrog-cli ''
 install_package jfrog-cli-go ''
 install_package jq ''
+install_package k9s ''
 install_package ktail ''
 install_package kube-prompt ''
 install_package kube-ps1 ''
@@ -55,6 +58,7 @@ install_package libtool ''
 install_package libunistring ''
 install_package libusb ''
 install_package libyaml ''
+install_package minikube ''
 install_package mpfr ''
 install_package mysql ''
 install_package ncurses ''
@@ -95,8 +99,10 @@ brew cask install $1
 install_cask_package lens
 install_cask_package meld
 install_cask_package pdk
+install_cask_package pe-client-tools
 install_cask_package postman
 install_cask_package powershell
+install_cask_package puppet-agent
 install_cask_package vagrant
 install_cask_package virtualbox
 install_cask_package virtualbox-extension-pack
