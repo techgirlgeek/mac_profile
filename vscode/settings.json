@@ -1,0 +1,20 @@
+{
+    "git.autofetch": true,
+    "window.zoomLevel": 2,
+    "go.formatTool": "goimports",
+    "trailing-spaces.trimOnSave": true,
+    "go.coverOnSave": true,
+    "go.coverOnSingleTest": true,
+    "go.delveConfig": {
+        "dlvLoadConfig": {
+            "followPointers": true,
+            "maxVariableRecurse": 1,
+            "maxStringLen": 1024,
+            "maxArrayValues": 64,
+            "maxStructFields": -1
+        },
+        "apiVersion": 2,
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+}
