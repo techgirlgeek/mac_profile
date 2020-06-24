@@ -69,7 +69,6 @@ plugins=(
   git
   git-extras
   git-flow
-  git-remote-branch
   iterm2
   osx
   vagrant

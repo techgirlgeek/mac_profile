@@ -8,16 +8,17 @@ alias ddig="dig +search +short drupal.slack.com"
 alias sourcez="source /Users/kcassio/.zshrc"
 alias gitprunedry="git remote prune origin --dry-run"
 alias gitprune="git remote prune origin"
+alias evalbundle='eval "$(<env.sh)"'
+alias clear_dns='sudo killall -HUP mDNSResponder; sleep 2; echo macOS DNS Cache Reset'
+alias morpa_rvm='rvm use ruby-2.3.3'
+
+# Vagrant
 alias vssh="vagrant ssh "
 alias vup="vagrant up "
 alias vdestroy="vagrant destroy "
 alias vprov="vagrant provision "
 alias vstat="vagrant status"
 alias vhalt="vagrant halt "
-alias artifactoryport="ssh 10.9.35.205 -L 1178:localhost:1178"
-alias evalbundle='eval "$(<env.sh)"'
-alias clear_dns='sudo killall -HUP mDNSResponder; sleep 2; echo macOS DNS Cache Reset'
-alias morpa_rvm='rvm use ruby-2.3.3'
 
 # K8s aliases
 alias k='kubectl'
@@ -42,7 +43,8 @@ alias usrldapmbr_dc03='ldapsearch -o ldif-wrap=no  -H ldaps://sea-dc03.davita.co
 #userldap() {
 #    ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D kcassio@davita.corp -W "(samAccountName=$1)" memberof
 #}
-alias mytest="echo Make it say: $1"
+#alias mytest="echo Make it say: ${1} and ${2}"
+
 # Vault
 setvtoken() {
   if [ -z ${VAULT_TOKEN+x} ]; then
@@ -52,3 +54,18 @@ setvtoken() {
     echo "VAULT_TOKEN is set, continuing..."
   fi
 }
+
+# Artifactory CLI
+alias artifactoryport="ssh 10.9.35.205 -L 1178:localhost:1178"
+# CLI Command: jfrog rt u sourcefile target_repo/target_file
+# brew install jfrog-cli
+jfup() {
+  # Show current config
+  jfrog rt c show
+  # Argument $1 file to upload
+  # Argument $2 repo in Artifactory
+  jfrog rt u ${1} ${2}/${1}
+}
+
+# Clear config and update configs/pwd
+alias jfreset='jfrog rt c clear && jfrog rt c'
