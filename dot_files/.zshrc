@@ -127,6 +127,11 @@ complete -o nospace -C /usr/local/bin/vault vault
 
 export VAULT_ADDR=https://platform-vault.davita.com
 
+# google-cloud-sdk
+export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Applications/google-cloud-sdk/path.zsh.inc' ]; then . '/Applications/google-cloud-sdk/path.zsh.inc'; fi
 

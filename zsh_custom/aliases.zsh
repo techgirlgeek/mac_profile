@@ -36,14 +36,19 @@ alias kpvcd='k describe pvc '
 alias cerebro='docker run -p 9000:9000 lmenezes/cerebro'
 
 # LDAP
-alias myldap='ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D kcassio@davita.corp -W "(samAccountName=kcassio)" memberof'
-alias userldap='ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D ${USER}@davita.corp -W' 
-alias usrldapmbr='ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D ${USER}@davita.corp -W memberof' 
-alias usrldapmbr_dc03='ldapsearch -o ldif-wrap=no  -H ldaps://sea-dc03.davita.corp/ -b dc=davita,dc=corp -D ${USER}@davita.corp -W memberof' 
-#userldap() {
-#    ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D kcassio@davita.corp -W "(samAccountName=$1)" memberof
-#}
-#alias mytest="echo Make it say: ${1} and ${2}"
+alias myldap='ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D kcassio@davita.corp -W "(samAccountName=kcassio" memberof'
+
+mbrldap() {
+  # Defaults to current user
+  if [ -z ${1} ]; then
+    export TM=${USER}
+  else
+    export TM=${1}
+  fi
+
+  echo "Teammate is ${TM}"
+  ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D kcassio@davita.corp -W "(samAccountName=${TM})" memberof
+}
 
 # Vault
 setvtoken() {
@@ -69,3 +74,6 @@ jfup() {
 
 # Clear config and update configs/pwd
 alias jfreset='jfrog rt c clear && jfrog rt c'
+
+# Make sure right version of ruby
+alias get-morpheus='rvm use 2.7.0;which morpheus'

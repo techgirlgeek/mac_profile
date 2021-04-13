@@ -1,6 +1,6 @@
 {
     "git.autofetch": true,
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 3,
     "go.formatTool": "goimports",
     "trailing-spaces.trimOnSave": true,
     "go.coverOnSave": true,
@@ -17,4 +17,21 @@
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+    "vs-kubernetes": {
+      "vs-kubernetes.minikube-path.mac": "/Users/kcassio/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+      "vscode-kubernetes.minikube-path.mac": "/Users/kcassio/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    "workbench.colorTheme": "Abyss",
+    "liveshare.allowInvites": "all",
+    "editor.tabSize": 2,
+    "[go]": {
+
+        "editor.insertSpaces": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "editor.detectIndentation": false,
+    "liveshare.authenticationProvider": "GitHub",
 }
