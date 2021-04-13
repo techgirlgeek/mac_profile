@@ -20,6 +20,7 @@ install_package automake ''
 install_package bat ''
 install_package cfssl ''
 install_package coreutils ''
+install_package diff-so-fancy ''
 install_package faas-cli ''
 install_package gcc ''
 install_package gdbm ''
@@ -58,6 +59,7 @@ install_package libtool ''
 install_package libunistring ''
 install_package libusb ''
 install_package libyaml ''
+install_package make ''
 install_package minikube ''
 install_package mpfr ''
 install_package mysql ''
@@ -96,6 +98,7 @@ echo EXECUTING: brew cask install $1
 brew cask install $1
 [ $? -ne 0 ] && $failed_items="$failed_items $1"  # package failed to install.
 }
+install_cask_package google-cloud-sdk
 install_cask_package lens
 install_cask_package meld
 install_cask_package pdk
