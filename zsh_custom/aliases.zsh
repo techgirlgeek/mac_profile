@@ -47,7 +47,7 @@ mbrldap() {
   fi
 
   echo "Teammate is ${TM}"
-  ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D kcassio@davita.corp -W "(samAccountName=${TM})" memberof
+  ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D ${USER}@davita.corp -W "(samAccountName=${TM})" memberof
 }
 
 # Vault
