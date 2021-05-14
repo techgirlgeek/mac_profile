@@ -1,6 +1,6 @@
 {
     "git.autofetch": true,
-    "window.zoomLevel": 3,
+    "window.zoomLevel": 1,
     "go.formatTool": "goimports",
     "trailing-spaces.trimOnSave": true,
     "go.coverOnSave": true,
