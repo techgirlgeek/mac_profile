@@ -81,7 +81,8 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # After the "source Oh My Zsh" line
-PROMPT=$PROMPT'$(kube_ps1) '
+#PROMPT=$PROMPT'$(kube_ps1) '
+#PROMPT=$PROMPT
 
 # User configuration
 

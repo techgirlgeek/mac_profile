@@ -21,7 +21,7 @@ alias vstat="vagrant status"
 alias vhalt="vagrant halt "
 
 # K8s aliases
-alias k='kubectl'
+alias k='kubecolor'
 alias kns='kubens'
 alias knx='kubectx'
 alias kpon='kubeon'
@@ -36,7 +36,7 @@ alias kpvcd='k describe pvc '
 alias cerebro='docker run -p 9000:9000 lmenezes/cerebro'
 
 # LDAP
-alias myldap='ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D kcassio@davita.corp -W "(samAccountName=kcassio" memberof'
+alias myldap='ldapsearch -o ldif-wrap=no  -H ldaps://den3ha.adldap.davita.corp/ -b dc=davita,dc=corp -D kcassio@davita.corp -W "(samAccountName=kcassio)" memberof'
 
 mbrldap() {
   # Defaults to current user
