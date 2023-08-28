@@ -1,0 +1,29 @@
+[include]
+  path=~/mac_profile/git/git_aliases
+[user]
+	email = karyn@techgirlgeek.com
+	name = Karyn Cassio
+[alias]
+  co = checkout
+  cob = checkout -b
+  br = branch
+  ci = commit
+  st = status
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  allbranch = branch -a
+  cam = commit -am
+  df = diff
+  gl = config --global -l
+  del = branch -D
+  brinfo = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdat
+  gone = ! "git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
+[credential]
+  helper = store
+[pager]
+  branch = false
+[init]
+  defaultBranch = main
+
