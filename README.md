@@ -24,4 +24,16 @@ Nothing much exciting to see here, just setup to save me time in the future.
 * Vscode Extensions
   - Start vscode
   - ls mac_profiles/vscode/extensions-list.txt - to get a list of extensions to install
+  - Go to terminal and restore extensions from list
+
+  ```bash
+  cat extensions-list.txt | xargs -L 1 code --install-extension
+  ```
+
+  - Create backup of extensions when extensions are added or removed:
+
+  ```bash
+  code --list-extensions > extensions-list.txt
+  ```
+
   

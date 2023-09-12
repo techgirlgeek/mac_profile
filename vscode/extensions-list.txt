@@ -6,11 +6,11 @@ donjayamanne.githistory
 dzhavat.bracket-pair-toggler
 earshinov.simple-alignment
 henriiik.docker-linter
-jpogran.puppet-vscode
 marlon407.code-groovy
 ms-python.python
 ms-python.vscode-pylance
 narekmal.vscode-run-git-difftool
+puppet.puppet-vscode
 redhat.ansible
 redhat.vscode-redhat-account
 redhat.vscode-yaml
